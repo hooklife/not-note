@@ -20,15 +20,11 @@ function createWindow() {
 		defaultWidth: 800,
 		defaultHeight: 600,
 	});
-	
+
 	const mainWindow = new BrowserWindow({
 		backgroundColor: 'whitesmoke',
 		titleBarStyle: 'hidden',
 		autoHideMenuBar: true,
-		trafficLightPosition: {
-			x: 17,
-			y: 32,
-		},
 		minHeight: 450,
 		minWidth: 500,
 		webPreferences: {
@@ -98,5 +94,5 @@ app.on('window-all-closed', () => {
 });
 
 ipcMain.on('to-main', (event, count) => {
-	return mainWindow.webContents.send('from-main', `next count is ${count+1}`);
-  })
+	return mainWindow.webContents.send('from-main', `next count is ${count + 1}`);
+})
