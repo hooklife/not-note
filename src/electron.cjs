@@ -23,7 +23,7 @@ function createWindow() {
 
 	const mainWindow = new BrowserWindow({
 		backgroundColor: 'whitesmoke',
-		titleBarStyle: 'hidden',
+		// titleBarStyle: 'hidden',
 		autoHideMenuBar: true,
 		minHeight: 450,
 		minWidth: 500,
